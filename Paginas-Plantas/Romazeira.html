@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Romãzeira</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/menu.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/slide.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/animais-plantas.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="botao-logo">
+                    <a class="nome-botoes" href="../index.html"><img class="imagem-logo" src="../Imagens/Logo-OurZoo.png" alt="Our Zoo"></a>
+                </div>
+                <div class="botoes-menu">
+                    <a class="nome-botoes"><span>Visitar</span></a>
+                    <div class="menu-baixo">
+                        <a href="../Apresentacoes-Atracoes.php.html">Apresentações</a>
+                        <a href="../Precos.html">Preços</a>
+                        <a href="../Planear-Visita.html">Planear Visita</a>
+                        <a href="../horarios.html">Horários</a>
+                        <a href="../Bilheteira.html">Bilheteira</a>
+                        <a href="../Sugestao-visita.html">Sugestão Visita</a>
+                        <a href="../Novidades.html">Novidades</a>
+                        <a href="../Localizacao.html">Localização</a>
+                    </div>
+                </div>
+                <div class="botoes-menu">
+                    <a class="nome-botoes"><span>Conhecer</span></a>
+                    <div class="menu-baixo">
+                        <a href="../Animais.html">Animais</a>
+                        <a href="../Plantas.html">Plantas</a>
+                        <a href="../Mapa.html">Mapa do Zoo</a>
+                    </div>
+                </div>
+                <div class="botoes-menu">
+                    <a class="nome-botoes"><span>Educar</span></a>
+                    <div class="menu-baixo">
+                        <a href="../Escolas.html">Escolas</a>
+                        <a href="../Centro-Pedagogico.html">Centro Pedagógico</a>
+                    </div>
+                </div>
+                <div class="botoes-menu">
+                    <a class="nome-botoes"><span>Viver</span></a>
+                    <div class="menu-baixo">
+                        <a href="../Festas-Aniversario.html">Aniversários</a>
+                        <a href="../Sabado-Selvagem.html">Sábado Selvagem</a>
+                        <a href="../Eventos.html">Eventos</a>
+                        <a href="../Zookids.html">ZooKids</a>
+                    </div>
+                </div>
+                <div class="botoes-menu">
+                    <a class="nome-botoes"><span>Apoiar</span></a>
+                    <div class="menu-baixo" style="min-width: 125%;">
+                        <a href="../Apadrinhar.html" style="width: 100%;">Apadrinhar</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        
+        <!--------------Slide--------------------->
+        
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="img-slide-1" style="background-image: url('../Plantas/Romazeira/topo3.jpg')"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="img-slide-1" style="background-image: url('../Plantas/Romazeira/topo.jpg')"></div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="img-slide-1" style="background-image: url('../Plantas/Romazeira/topo2.jpg')"></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="img-slide-1" style="background-image: url('../Plantas/Romazeira/topo4.jpg')"></div>
+            </div>
+            
+            <!--
+            &#10094;
+            &#10095;
+            -->
+            <div class="slide-botoes" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)"></a>
+            <a class="next" onclick="plusSlides(1)"></a>
+            
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        <div class="espacamento-3"></div>
+        <div class="centro-pagina">
+            <table class="tabela-botoes-extincao">
+                <tr>
+                    <th class="espaco-botoes-extincao">
+                        Não Avaliada
+                    </th>
+                    <th class="espaco-botoes-extincao extincao-ativo">
+                        Pouco Preocupante
+                    </th>
+                    <th class="espaco-botoes-extincao">
+                        Vuneravél
+                    </th>
+                    <th class="espaco-botoes-extincao">
+                        Em Perigo
+                    </th>
+                    <th class="espaco-botoes-extincao">
+                        Criticamente em Perigo
+                    </th>
+                    <th class="espaco-botoes-extincao">
+                        Extinta na Natureza
+                    </th>
+                    <th class="espaco-botoes-extincao">
+                        Extinta
+                    </th>
+                </tr>
+            </table>
+        </div>
+        
+        
+        
+        <div class="centro-pagina" style="margin-top: 10px;">
+            <a class="nome-animal-planta">Romãzeira</a><br>
+            <a class="cientifico-animal-planta">Punica granatum</a>
+            
+            <div class="informacoes-primarias">
+                
+                <a class="titulo-seccao">Descricao da Planta</a>
+                <a class="texto-animais-plantas">
+                    Este é um arbusto grande ou pequena árvore de folha caduca, com muitos ramos delgados, e um fruto globoso sobejamente 
+                    conhecido, a romã. Prefere solos profundos, sempre sob sol pleno. É uma planta originária do Sudoeste da Ásia que pode 
+                    ser utilizada para diversos fins, mas sobretudo como ornamental e como medicinal.
+                </a>
+                
+                <div class="imagem-animais-coluna">
+                    <div>
+                        <div class="imagem-animais-descricao">Folha</div>
+                        <img class="imagem-animais" src="../Plantas/Romazeira/folha.png" alt=""/>
+                    </div>
+
+                </div>
+
+
+                <div class="imagem-animais-coluna">
+                    <div>
+                        <div class="imagem-animais-descricao">Flor</div>
+                        <img class="imagem-animais" src="../Plantas/Romazeira/flor.png" alt=""/>
+
+                    </div>
+                </div>
+
+                <div class="imagem-animais-coluna">
+                    <div>
+                        <div class="imagem-animais-descricao">Fruto</div>
+                        <img class="imagem-animais" src="../Plantas/Romazeira/fruto.png" alt=""/>
+                    </div>
+                </div>
+                
+                
+                <div class="divisao-animais-plantas"></div>
+                
+                
+                
+                <a class="titulo-seccao">Flor e Fruto</a>
+                <img class="imagem-mapa" src="../Plantas/Romazeira/romazeira-flor-e-fruto.png" alt=""/>
+                
+                
+                
+                <div class="divisao-animais-plantas"></div>
+                
+                <a class="titulo-seccao">Curiosidades</a>
+                <a class="texto-animais-plantas">
+                    Sabia que no Antigo Egipto, somente os sacerdotes do Deus do Sol (Amon Ra) tinham o privilégio de cultivar a Romãzeira,
+                    e as romãs eram colocadas sobre os túmulos dos faraós como oferendas sagradas?
+                </a>
+                
+                <div class="divisao-animais-plantas"></div>
+                
+                <a class="titulo-seccao">Localização no Zoo</a>
+                <img class="imagem-mapa" src="../Plantas/Romazeira/romazeira-localizacao.png" alt=""/>
+                
+             
+            </div>
+            
+            
+            <div class="informacoes-secundarias">
+                
+                <div class="divisao-animais-plantas"></div>
+                
+                <table class="tabela-familias-animais">
+                    <tr>
+                        <td>
+                            <a class="titulo-seccao-2">Família:</a>
+                        </td>
+                        <td>
+                            <a class="texto-animais-plantas">Punicaceae/Lythraceae</a>
+                        </td>
+                    </tr>
+                </table>
+                
+                <div class="divisao-animais-plantas"></div>
+                
+                <a class="titulo-seccao">Tamanho</a>
+                <a class="texto-animais-plantas"><8 metros</a>
+                
+                <div class="divisao-animais-plantas"></div>
+                
+                
+            </div>
+            
+            
+        </div>
+        
+        
+        
+        
+        
+        <div class="pagina-final">
+            <table class="tabela-final">
+                <tr>
+                    <td class="texto-final" style="width: 33%;">
+                        <table class="tabela-patrocinadores">
+                            <tr>
+                                <td class="espaco-patrocinador">
+                                    <a href="https://www.ammpa.org/"><img class="imagem-patrocinador" src="../Imagens/ammpa-logo.png" alt=""/></a>
+                                </td>
+                                <td class="espaco-patrocinador">
+                                    <a href="https://eaam.org/"><img class="imagem-patrocinador"  src="../Imagens/eamm-logo.png" alt=""/></a>
+                                </td>
+                                <td class="espaco-patrocinador">
+                                    <a href="https://www.eaza.net/"><img class="imagem-patrocinador"  src="../Imagens/eaza-logo.png" alt=""/></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="espaco-patrocinador">
+                                    <a href="https://www.eaza.net/conservation/programmes/"><img class="imagem-patrocinador"  src="../Imagens/eep-logo.png" alt=""/></a>
+                                </td>
+                                <td class="espaco-patrocinador">
+                                    <a href="https://www.iucn.org/"><img class="imagem-patrocinador"  src="../Imagens/iucn-logo.png" alt=""/></a>
+                                </td>
+                                <td class="espaco-patrocinador">
+                                    <a href="http://www.waza.org/en/site/home"><img class="imagem-patrocinador"  src="../Imagens/waza-logo.png" alt=""/></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="texto-final" style="width: 34%;">
+                        <p>
+                            R. Freixo 109, 5400-756<br>
+                            5400-035 Chaves, Portugal<br>
+                            Telf. 910123987<br>
+                        </p>
+                        <p>
+                            Politica de privacidade ©
+                        </p>
+                        <p>
+                            Website by Tiago Fernandes
+                        </p>
+                    </td>
+                    <td class="texto-final-3" style="width: 33%;">
+                        <img class="imagem-redes-sociais" src="../Imagens/Redes-Sociais.jpg" alt=""/>
+                    </td>
+                    <!--
+                    <td class="texto-final-4" style="width: 9%;">
+                        Administrador
+                        <button class="botao-login">
+                            Login
+                        </button>
+                    </td>
+                    -->
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
+

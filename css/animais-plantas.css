@@ -1,0 +1,180 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10/04/2020, 19:28:12
+    Author     : Tiago
+*/
+
+
+.tabela-botoes-extincao{
+    width: 100%;
+    height: 90px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.espaco-botoes-extincao{
+    width: 14.28%;
+    height: 90px;
+    background-color: #cfcfcf;
+    font-size: 19px;
+    font-family: sans-serif;
+}
+
+
+.extincao-ativo{
+    background-color: #e8bc5d;
+}
+
+
+
+.nome-animal-planta{
+    position: relative;
+    text-align: center;
+    font-size: 60px;
+    color: #4cba3f;
+    font-family: cursive;
+    margin-top: 10px;
+    display: block;
+}
+
+.cientifico-animal-planta{
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    color: #4cba3f;
+    font-family: cursive;
+    margin-top: -20px;
+    margin-bottom: 25px;
+    display: block;
+}
+
+
+.informacoes-primarias{
+    position: relative;
+    left: 0;
+    width: 70%;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.informacoes-secundarias{
+    position: absolute;
+    right: 0;
+    top: 143px;
+    width: 30%;
+    height: auto;
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+
+.titulo-seccao{
+    position: relative;
+    text-align: left;
+    font-size: 30px;
+    color: #b89f40;
+    font-family: cursive;
+    margin: 20px;
+    display: block;
+}
+
+.titulo-seccao-2{
+    position: relative;
+    text-align: left;
+    font-size: 20px;
+    color: #b89f40;
+    font-family: cursive;
+    margin-left: 20px;
+    margin-right: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.titulo-seccao-3{
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    color: #43b7fa;
+    font-family: cursive;
+    margin: 5px;
+    display: block;
+}
+
+.texto-animais-plantas{
+    position: relative;
+    text-align: justify;
+    font-size: 20px;
+    color: #9c9c9c;
+    font-family: sans-serif;
+    margin: 0;
+    display: block;
+}
+
+.imagem-animais-coluna {
+    position: relative;
+    padding: 6px;
+    float: left;
+    width: 30%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+
+.imagem-animais-coluna-2 {
+    position: relative;
+    padding: 0 6px;
+    float: left;
+    width: 20%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    display: block;
+}
+
+.imagem-animais {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.imagem-animais-descricao {
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    color: #b89f40;
+    font-family: cursive;
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.divisao-animais-plantas{
+    position: relative;
+    width: 97%;
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    height: 3px;
+    background-color: #949494;
+}
+
+.imagem-mapa{
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.tabela-familias-animais{
+    left: 0;
+}
+
+.tabela-familias-animais a{
+    text-indent : 0em;
+}

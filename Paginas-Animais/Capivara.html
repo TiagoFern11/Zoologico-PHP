@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Capivara</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/menu.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/slide.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/animais-plantas.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="botao-logo">
+                    <a class="nome-botoes" href="../index.html"><img class="imagem-logo" src="../Imagens/Logo-OurZoo.png" alt="Our Zoo"></a>
+                </div>
+                <div class="botoes-menu">
+                    <a class="nome-botoes"><span>Visitar</span></a>
+                    <div class="menu-baixo">
+                        <a href="../Apresentacoes-Atracoes.php.html">Apresentações</a>
+                        <a href="../Precos.html">Preços</a>
+                        <a href="../Planear-Visita.html">Planear Visita</a>
+                        <a href="../horarios.html">Horários</a>
+                        <a href="../Bilheteira.html">Bilheteira</a>
+                        <a href="../Sugestao-visita.html">Sugestão Visita</a>
+                        <a href="../Novidades.html">Novidades</a>
+                        <a href="../Localizacao.html">Localização</a>
+                    </div>
+                </div>
+                <div class="botoes-menu">
+                    <a class="nome-botoes"><span>Conhecer</span></a>
+                    <div class="menu-baixo">
+                        <a href="../Animais.html">Animais</a>
+                        <a href="../Plantas.html">Plantas</a>
+                        <a href="../Mapa.html">Mapa do Zoo</a>
+                    </div>
+                </div>
+                <div class="botoes-menu">
+                    <a class="nome-botoes"><span>Educar</span></a>
+                    <div class="menu-baixo">
+                        <a href="../Escolas.html">Escolas</a>
+                        <a href="../Centro-Pedagogico.html">Centro Pedagógico</a>
+                    </div>
+                </div>
+                <div class="botoes-menu">
+                    <a class="nome-botoes"><span>Viver</span></a>
+                    <div class="menu-baixo">
+                        <a href="../Festas-Aniversario.html">Aniversários</a>
+                        <a href="../Sabado-Selvagem.html">Sábado Selvagem</a>
+                        <a href="../Eventos.html">Eventos</a>
+                        <a href="../Zookids.html">ZooKids</a>
+                    </div>
+                </div>
+                <div class="botoes-menu">
+                    <a class="nome-botoes"><span>Apoiar</span></a>
+                    <div class="menu-baixo" style="min-width: 125%;">
+                        <a href="../Apadrinhar.html" style="width: 100%;">Apadrinhar</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <!--------------Slide--------------------->
+        
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="img-slide-1" style="background-image: url('../Animais/Capivara/capivara2.jpg')"></div>
+                <div class="texto-encima-3">
+                    <img class="estrela" src="../Imagens/estrela-do-zoo-1.png" alt=""/>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="img-slide-1" style="background-image: url('../Animais/Capivara/capybara_nationalgeographic_1518115.jpg')"></div>
+                <div class="texto-encima-3">
+                    <img class="estrela" src="../Imagens/estrela-do-zoo-1.png" alt=""/>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="img-slide-1" style="background-image: url('../Animais/Capivara/mamiferos-capivaras_2-1920x1080-c-default.jpg')"></div>
+                <div class="texto-encima-3">
+                    <img class="estrela" src="../Imagens/estrela-do-zoo-1.png" alt=""/>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="img-slide-1" style="background-image: url('../Animais/Capivara/mamiferos-capivaras_6-1920x1080-c-default.jpg')"></div>
+                <div class="texto-encima-3">
+                    <img class="estrela" src="../Imagens/estrela-do-zoo-1.png" alt=""/>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="img-slide-1" style="background-image: url('../Animais/Capivara/mamiferos-capivaras_7-1920x1080-c-default.jpg')"></div>
+                <div class="texto-encima-3">
+                    <img class="estrela" src="../Imagens/estrela-do-zoo-1.png" alt=""/>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <iframe class="video-slide" src="https://www.youtube.com/embed/wNzmHIAapZ8" frameborder="0" allowfullscreen>
+                </iframe>
+            </div>
+            <!--
+            &#10094;
+            &#10095;
+            -->
+            <div class="slide-botoes" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span> 
+                <span class="dot" onclick="currentSlide(6)"></span> 
+            </div>
+            <a class="prev" onclick="plusSlides(-1)"></a>
+            <a class="next" onclick="plusSlides(1)"></a>
+            
+        </div>
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        <div class="espacamento-3"></div>
+        <div class="centro-pagina">
+            <table class="tabela-botoes-extincao">
+                <tr>
+                    <th class="espaco-botoes-extincao">
+                        Não Avaliada
+                    </th>
+                    <th class="espaco-botoes-extincao extincao-ativo">
+                        Pouco Preocupante
+                    </th>
+                    <th class="espaco-botoes-extincao">
+                        Vuneravél
+                    </th>
+                    <th class="espaco-botoes-extincao">
+                        Em Perigo
+                    </th>
+                    <th class="espaco-botoes-extincao">
+                        Criticamente em Perigo
+                    </th>
+                    <th class="espaco-botoes-extincao">
+                        Extinta na Natureza
+                    </th>
+                    <th class="espaco-botoes-extincao">
+                        Extinta
+                    </th>
+                </tr>
+            </table>
+        </div>
+        
+        
+        
+        <div class="centro-pagina" style="margin-top: 10px;">
+            <a class="nome-animal-planta">Capivara</a><br>
+            <a class="cientifico-animal-planta">Hydrochaeris hydrochaeris</a>
+            
+            <div class="informacoes-primarias">
+                
+                <a class="titulo-seccao">Descricao do Animal</a>
+                <a class="texto-animais-plantas">
+                    A Capivara, oriunda da América do Sul, onde pode ser encontrada nas margens dos Rios, é o maior roedor existente à face
+                    da Terra! Este fantástico mamífero pode ultrapassar os 60kg e, muitas vezes, pode medir 1,30 metros de comprimento.
+                </a>
+                
+                <div class="divisao-animais-plantas"></div>
+                
+                
+                
+                <a class="titulo-seccao">Hábitos</a>
+                <a class="texto-animais-plantas">
+                    É um animal semi-aquático, excelente nadador, podendo nadar com os seus olhos, ouvidos e narinas mesmo acima da superfície
+                    da água (devido ao formato da sua cabeça), quer totalmente submersas. Quando se encontra em perigo, mergulha, nadando sob
+                    a superfície até se sentir segura, podendo permanecer submergida por vários minutos. Pode igualmente esconder-se entre
+                    a vegetação aquática apenas com as narinas acima da superfície.
+                </a>
+                <a class="texto-animais-plantas">
+                    As capivaras comunicam através de vocalizações, incluindo um latido como sinal de alarme.<br>
+                    Este animal é mais ativo durante a manhã e final da tarde. Durante a parte mais quente do dia é encontrado em locais 
+                    húmidos com sombra.
+                </a>
+                
+                <div class="imagem-animais-coluna">
+                    <div>
+                        <div class="imagem-animais-descricao">Atividade</div>
+                        <img class="imagem-animais" src="../Animais/Icones-Grandes/diurna.png" alt=""/>
+                    </div>
+
+                </div>
+
+
+                <div class="imagem-animais-coluna">
+                    <div>
+                        <div class="imagem-animais-descricao">Vida Social</div>
+                        <img class="imagem-animais" src="../Animais/Icones-Grandes/gregaria.png" alt=""/>
+
+                    </div>
+                </div>
+
+                <div class="imagem-animais-coluna">
+                    <div>
+                        <div class="imagem-animais-descricao">Dieta</div>
+                        <img class="imagem-animais" src="../Animais/Icones-Grandes/herbivora.png" alt=""/>
+                    </div>
+                </div>
+                
+                
+                <div class="divisao-animais-plantas"></div>
+                
+                
+                
+                <a class="titulo-seccao">Reprodução</a>
+                <a class="texto-animais-plantas">
+                    A capivara acasala na água, mais frequentemente quando a precipitação é elevada, o que proporciona também vegetação mais
+                    abundante. Após uma gestação de 150 dias, ocorre o parto, em locais abertos, podendo a fêmea ter entre 1 a 8 crias. 
+                    Estas são precociais, pois nascem com os olhos abertos, com pelo a cobrir todo o corpo e dentição completa, começando a 
+                    seguir a progenitora e a alimentarem-se de erva rasteira pouco tempo após o nascimento. Atingem a maturidade sexual com
+                    15 meses.
+                </a>
+                <a class="texto-animais-plantas">
+                    As capivaras são animais sociais, vivendo em grupos familiares que podem ter entre 10 a 30 indivíduos. Geralmente, o grupo
+                    é composto por vários machos, um dos quais é dominante, várias fêmeas adultas e as suas crias. Os machos que não possuem 
+                    o seu próprio grupo familiar vivem solitários. Os machos têm uma grande glândula sebácea sobre a cabeça, que utilizam 
+                    para marcar a sua dominância através do cheiro.
+                </a>
+                
+                
+                <div class="imagem-animais-coluna-2">
+                    <div>
+                        <div class="imagem-animais-descricao">Reprodução</div>
+                        <img class="imagem-animais" src="../Animais/Icones-Grandes/Reproducao/vivipara.png" alt=""/>
+                    </div>
+
+                </div>
+                <div class="imagem-animais-coluna-2">
+                    <div>
+                        <div class="imagem-animais-descricao">Nº de Animais</div>
+                        <img class="imagem-animais" src="../Animais/Icones-Grandes/Reproducao/2-5-crias.png" alt=""/>
+                    </div>
+
+                </div>
+
+                <div class="imagem-animais-coluna-2">
+                    <div>
+                        <div class="imagem-animais-descricao">Gestação</div>
+                        <img class="imagem-animais" src="../Animais/Icones-Grandes/Reproducao/115-150-dias.png" alt=""/>
+
+                    </div>
+                </div>
+
+                <div class="imagem-animais-coluna-2">
+                    <div>
+                        <div class="imagem-animais-descricao">Maturidade Sexual</div>
+                        <img class="imagem-animais" src="../Animais/Icones-Grandes/Reproducao/15-meses.png" alt=""/>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="divisao-animais-plantas"></div>
+                
+                <a class="titulo-seccao">Conservação</a>
+                <a class="texto-animais-plantas">
+                    É considerada uma espécie Pouco Preocupante pela IUCN.<br>
+                    É encontrada próxima da água, em florestas húmidas ou regiões com vegetação densa ao longo de rios, lagos, lagoas e pântanos.
+                </a>
+                
+                <div class="divisao-animais-plantas"></div>
+                
+                <a class="titulo-seccao">Habitat</a>
+                <a class="texto-animais-plantas">
+                    A capivara ocorre na América do Sul, mais propriamente na Guiana Francesa, Suriname, Guiana, Venezuela, Colômbia, Peru, 
+                    Panamá, Bolívia, Argentina, Paraguai e Uruguai.
+                </a>
+                <img class="imagem-mapa" src="../Animais/Capivara/mapa-capivara.png" alt=""/>
+                
+             
+            </div>
+            
+            
+            <div class="informacoes-secundarias">
+                
+                <div class="divisao-animais-plantas"></div>
+                
+                <table class="tabela-familias-animais">
+                    <tr>
+                        <td>
+                            <a class="titulo-seccao-2">Classe:</a>
+                        </td>
+                        <td>
+                            <a class="texto-animais-plantas">Mammals</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class="titulo-seccao-2">Ordem:</a>
+                        </td>
+                        <td>
+                            <a class="texto-animais-plantas">Rodentia</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class="titulo-seccao-2">Família:</a>
+                        </td>
+                        <td>
+                            <a class="texto-animais-plantas">Caviidae</a>
+                        </td>
+                    </tr>
+                </table>
+                
+                <div class="divisao-animais-plantas"></div>
+                
+                <a class="titulo-seccao">Tamanho</a>
+                <a class="texto-animais-plantas">Comprimento: 100 a 130cm</a>
+                
+                <div class="divisao-animais-plantas"></div>
+                
+                <a class="titulo-seccao">Peso</a>
+                <a class="texto-animais-plantas">60-80 kg</a>
+                
+                <div class="divisao-animais-plantas"></div>
+                
+                <a href="../Apadrinhar.html" class="botao-classes centro">Apadrinhar Animal</a>
+                
+                <div class="divisao-animais-plantas"></div>
+                
+                
+                
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        
+        
+        
+        
+        
+        <div class="pagina-final">
+            <table class="tabela-final">
+                <tr>
+                    <td class="texto-final" style="width: 33%;">
+                        <table class="tabela-patrocinadores">
+                            <tr>
+                                <td class="espaco-patrocinador">
+                                    <a href="https://www.ammpa.org/"><img class="imagem-patrocinador" src="../Imagens/ammpa-logo.png" alt=""/></a>
+                                </td>
+                                <td class="espaco-patrocinador">
+                                    <a href="https://eaam.org/"><img class="imagem-patrocinador"  src="../Imagens/eamm-logo.png" alt=""/></a>
+                                </td>
+                                <td class="espaco-patrocinador">
+                                    <a href="https://www.eaza.net/"><img class="imagem-patrocinador"  src="../Imagens/eaza-logo.png" alt=""/></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="espaco-patrocinador">
+                                    <a href="https://www.eaza.net/conservation/programmes/"><img class="imagem-patrocinador"  src="../Imagens/eep-logo.png" alt=""/></a>
+                                </td>
+                                <td class="espaco-patrocinador">
+                                    <a href="https://www.iucn.org/"><img class="imagem-patrocinador"  src="../Imagens/iucn-logo.png" alt=""/></a>
+                                </td>
+                                <td class="espaco-patrocinador">
+                                    <a href="http://www.waza.org/en/site/home"><img class="imagem-patrocinador"  src="../Imagens/waza-logo.png" alt=""/></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="texto-final" style="width: 34%;">
+                        <p>
+                            R. Freixo 109, 5400-756<br>
+                            5400-035 Chaves, Portugal<br>
+                            Telf. 910123987<br>
+                        </p>
+                        <p>
+                            Politica de privacidade ©
+                        </p>
+                        <p>
+                            Website by Tiago Fernandes
+                        </p>
+                    </td>
+                    <td class="texto-final-3" style="width: 33%;">
+                        <img class="imagem-redes-sociais" src="../Imagens/Redes-Sociais.jpg" alt=""/>
+                    </td>
+                    <!--
+                    <td class="texto-final-4" style="width: 9%;">
+                        Administrador
+                        <button class="botao-login">
+                            Login
+                        </button>
+                    </td>
+                    -->
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
+

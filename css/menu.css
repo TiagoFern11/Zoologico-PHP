@@ -1,0 +1,235 @@
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08/04/2020, 23:39:36
+    Author     : Tiago
+
+*/
+* {box-sizing: border-box}
+
+body{
+    margin: 0;
+}
+
+/*---------NavBar-------------*/
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #31B404;
+  background-image: linear-gradient(#31B404 1%, #31B404 90%, #c97432 99%);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 50;
+}
+ 
+.botoes-menu{
+  float: left;
+  width: 15%;
+  height: 100%;
+  position: relative;
+}
+
+.botoes-menu a{
+    text-indent : 0em;
+}
+
+.botao-logo{
+  float: left;
+  width: 25%;
+  height: 80px;
+  position: relative;
+}
+
+
+
+
+.imagem-logo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    object-fit: contain;
+}
+ 
+.nome-botoes {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: block;
+  line-height: 80px;
+  color: #bd7d2a;
+  font-size: 27px;
+  font-weight: bold;
+  font-family: cursive;
+  transition: background-color 0.6s ease;
+  text-transform: uppercase;
+}
+ 
+.nome-botoes:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+ 
+.menu-baixo {
+  display: none;
+  overflow: hidden;
+  background-color: #E0F8E0;
+  min-width: 250%;
+  position: absolute;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  padding: 10px;
+}
+ 
+header > nav > div:not(:first-of-type):not(:last-of-type) > div {
+  left: -50%;
+  border-radius: 0 0 3px 3px;
+}
+ 
+header > nav > div:first-of-type > div {
+  left: 0;
+  border-radius: 0 0 3px 0;
+}
+ 
+header > nav > div:last-of-type > div {
+  right: 0;
+  border-radius: 0 0 0 3px;
+}
+ 
+header > nav > div:hover > div { display: block; }
+ 
+.menu-baixo > a {
+    text-indent : 0em;
+    display: block;
+    float: left;
+    padding: 10px 5px;
+    width: 48%;
+    height: auto;
+    margin: 1%;
+    text-align: center;
+    font-family: cursive;
+    font-size: 27px;
+    background-color: #29D645;
+    color: #dfffc2;
+    border-radius: 5px;
+    transition: background-color 0.6s ease;
+}
+
+.menu-baixo > a:hover {
+    background-color: #0F9B26;
+    cursor: pointer;
+    display: inline;
+    position: relative;
+}
+
+.icon{
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    display: inline;
+}
+
+/*---------NavBar-------------*/
+
+
+/*---------Rodapé-------------*/
+
+.pagina-final{
+    width: 100%;
+    margin-left: 0;
+    margin-top: 40px;
+    margin-bottom: 0;
+    height: auto;
+    bottom: 0;
+}
+
+
+.tabela-final{
+    width: 100%;
+    height: 200px;
+    padding: 0;
+    background-color: #D8D8D8;
+}
+
+.espaco-final{
+    width: 33%;
+    text-align: center;
+}
+
+.texto-final{
+    text-align: center;
+    padding: 2px;
+    
+    border-right: 2px solid #BDBDBD;
+    width: 34%;
+}
+
+.tabela-patrocinadores{
+    position: relative;
+    width: 200px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.espaco-patrocinador{
+    height: 50px;
+    width: 50px;
+    margin: 2px;
+}
+
+.imagem-patrocinador{
+    max-width: 50px;
+    height: auto;
+    object-fit: contain;
+}
+
+.espaco-patrocinador:hover {
+    transition: background-color 0.6s ease;
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.imagem-redes-sociais{
+    position: relative;
+    width: 80%;
+    height: 200px;
+    object-fit: contain;
+    margin-left: 10%;
+}
+
+
+/*------------ Sroll Bar -----------------*/
+
+::-webkit-scrollbar {
+    background-color: #ffcaa1;
+    width: 15px;
+}
+
+/* caminho */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 4px #f29c5a; 
+    border-radius: 10px;
+}
+ 
+/* puxador */
+::-webkit-scrollbar-thumb {
+    background: #d65e02; 
+    border-radius: 10px;
+}
+
+/* passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+    background: #ba5100; 
+}
